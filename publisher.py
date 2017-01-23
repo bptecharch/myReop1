@@ -9,6 +9,7 @@ my_records = [
 ]
 
 #note
+#made some more changes
 for record in my_records:
 	try:
 		requests.post("http://127.0.0.1:5000/bptech/project/streams", json = record)
