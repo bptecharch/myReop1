@@ -8,6 +8,7 @@ my_records = [
         {"type": "TempRent", "value": "temp_rent"}
 ]
 
+#note
 for record in my_records:
 	try:
 		requests.post("http://127.0.0.1:5000/bptech/project/streams", json = record)
