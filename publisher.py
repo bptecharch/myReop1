@@ -1,4 +1,4 @@
-import requests
+#import requests
 import json
 
 my_records = [
@@ -12,6 +12,7 @@ my_records = [
 #made some more changes
 for record in my_records:
 	try:
-		requests.post("http://127.0.0.1:5000/bptech/project/streams", json = record)
+		#requests.post("http://127.0.0.1:5000/bptech/project/streams", json = record)
+		print record
 	except Exception as e:
 		print("Exception thrown when post to REST api: %s", e)
